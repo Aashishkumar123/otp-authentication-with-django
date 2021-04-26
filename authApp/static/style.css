@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+.signup-form{
+    width:450px;
+    margin-left: 450px;
+    font-family: 'Zen Dots', cursive;
+    border-radius: 15px;
+}
+.signup-form h3, .otp-signup-form h5, .login-form h3, .otp-login-form h5, .otp-email-form h5{
+    background-color: #2b2e4a;
+    color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.signup-form form input, .otp-signup-form form input{
+    width: 350px;
+    height: 35px;
+}
+.signup-form form button, .otp-signup-form form button, .login-form button, .otp-login-form button, .otp-email-form button , .logout-btn, .signup-btn, .login-btn{
+    background-color: #e84545;
+    color: white;
+    font-family: 'Zen Dots', cursive;
+
+}
+
+.otp-signup-form, .otp-login-form, .otp-email-form{
+    width: 600px;
+    margin-left: 400px;
+    font-family: 'Zen Dots', cursive;
+    border-radius: 15px;
+
+}
+
+.login-form{
+    width: 500px;
+    margin-left: 450px;
+    font-family: 'Zen Dots', cursive;
+    border-radius: 15px;
+}
+
+.login-form form input{
+    width: 400px;
+    height: 35px;
+}
+
+.message , h3{
+    font-family: 'Zen Dots', cursive;
+}
+span{
+    font-family: 'Zen Dots', cursive;
+    
+}
