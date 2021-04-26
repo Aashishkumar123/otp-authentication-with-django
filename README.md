@@ -9,3 +9,6 @@ follow this link https://www.fast2sms.com/dashboard/dev-api and here you will ge
 <h3>modules used </h3>
 Django==3.0.5 --->> pip / pip3 install django
 requests==2.25.1 --->>> pip / pip3 install requests
+
+
+1. <h1> Registration with OTP </h1>
