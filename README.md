@@ -7,7 +7,7 @@ Go to this website https://www.fast2sms.com/ and just sigup and you will get the
 follow this link https://www.fast2sms.com/dashboard/dev-api and here you will get your api key just copy the api key and paste it views.py file of send_otp() function inside the api variable.
 
 <h3>modules used </h3>
-Django==3.0.5 --->> pip / pip3 install django
+Django==3.0.5 --->> pip / pip3 install django <br>
 requests==2.25.1 --->>> pip / pip3 install requests
 
 
