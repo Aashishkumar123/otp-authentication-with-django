@@ -32,7 +32,7 @@ requests==2.25.1 --->>> pip / pip3 install requests
 
 <br><br>
 
-<h5>Now you will redirect to  home page <h5>
+<h5>Now you will redirect to  home page now click on verify now , you will get an email just copy the otp and paste it. <h5>
  <img src="image/Screenshot 2021-04-26 at 5.40.32 PM.png" width="600px;">
 
  
