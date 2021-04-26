@@ -15,7 +15,7 @@ requests==2.25.1 --->>> pip / pip3 install requests
  <p> Add your credintals and just click on create account</p> <br>
  
  
- <img src="https://github.com/Aashishkumar123/otp-authentication-with-django/blob/main/image/Screenshot%202021-04-26%20at%204.50.17%20PM.png">
+ <img src="https://github.com/Aashishkumar123/otp-authentication-with-django/blob/main/image/Screenshot%202021-04-26%20at%204.50.17%20PM.png" width="400px;">
  
  <br>
  <p> Now an OTP has been send to your mobile number copy the otp and paste it here</p> <br>
