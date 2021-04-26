@@ -11,4 +11,6 @@ Django==3.0.5 --->> pip / pip3 install django
 requests==2.25.1 --->>> pip / pip3 install requests
 
 
-1. <h1> Registration with OTP </h1>
+ <h1> 1. Registration with OTP </h1>
+ 
+ <img src="https://github.com/Aashishkumar123/otp-authentication-with-django/blob/main/image/Screenshot%202021-04-26%20at%204.50.17%20PM.png">
