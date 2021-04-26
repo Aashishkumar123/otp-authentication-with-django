@@ -23,6 +23,9 @@ requests==2.25.1 --->>> pip / pip3 install requests
 
 <br><br>
 
-<h1> 1. Login with OTP </h1><br>
+<h1> 2. Login with OTP </h1><br>
  <p> Add your credintals and just click on Login</p> <br>
+  <img src="https://github.com/Aashishkumar123/otp-authentication-with-django/blob/main/image/Screenshot%202021-04-26%20at%204.52.49%20PM.png" width="600px;">
+
+ 
  
