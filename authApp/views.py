@@ -9,7 +9,7 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login 
 from django.core.mail import send_mail
 from django.conf import settings
-
+from django.http import HttpResponse
 # Create your views here.
 
 
@@ -88,6 +88,16 @@ def otpRegistration(request):
 
 
 def userLogin(request):
+
+    try :
+        if request.session.get('failed') > 2:
+            return HttpResponse('<h1> You have to wait for 5 minutes to login again</h1>')
+    except:
+        request.session['failed'] = 0
+        request.session.set_expiry(100)
+
+
+
     if request.method == "POST":
         username = request.POST['username']
         password = request.POST['password']
