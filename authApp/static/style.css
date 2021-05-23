@@ -6,7 +6,7 @@
     font-family: 'Zen Dots', cursive;
     border-radius: 15px;
 }
-.signup-form h3, .otp-signup-form h5, .login-form h3, .otp-login-form h5, .otp-email-form h5{
+.signup-form h3, .otp-signup-form h5, .login-form h3, .otp-login-form h5, .otp-email-form h5, .change-password-form h3{
     background-color: #2b2e4a;
     color: white;
     border-top-left-radius: 15px;
@@ -16,7 +16,7 @@
     width: 350px;
     height: 35px;
 }
-.signup-form form button, .otp-signup-form form button, .login-form button, .otp-login-form button, .otp-email-form button , .logout-btn, .signup-btn, .login-btn{
+.signup-form form button, .otp-signup-form form button, .login-form button, .otp-login-form button, .otp-email-form button , .logout-btn, .signup-btn, .login-btn, .change-password-form form button{
     background-color: #e84545;
     color: white;
     font-family: 'Zen Dots', cursive;
@@ -31,14 +31,14 @@
 
 }
 
-.login-form{
+.login-form, .change-password-form{
     width: 500px;
     margin-left: 450px;
     font-family: 'Zen Dots', cursive;
     border-radius: 15px;
 }
 
-.login-form form input{
+.login-form form input, .change-password-form form input{
     width: 400px;
     height: 35px;
 }
@@ -49,4 +49,7 @@
 span{
     font-family: 'Zen Dots', cursive;
     
+}
+a{
+    text-decoration:none;
 }

@@ -1,3 +1,4 @@
+import re
 from django.shortcuts import render,redirect
 from .forms import UserRegistrationForm,UserProfileForm
 from .models import Profile
@@ -167,3 +168,44 @@ def email_verification(request):
 
 
     return render(request,'email-verified.html')
+
+def forget_password(request):
+    if request.method == "POST":
+        email = request.POST['email']
+        if User.objects.filter(email=email).exists():
+            uid = User.objects.get(email=email)
+            url = f'http://127.0.0.1:8000/change-password/{uid.profile.uuid}'
+            send_mail(
+            'Reset Password',
+            url,
+            settings.EMAIL_HOST_USER,
+            [email],
+            fail_silently=False,
+        )
+            return redirect('/forget-password/done/')
+        else:
+            messages.error(request,'email address is not exist')
+    return render(request,'forget-password.html')
+
+def change_password(request,uid):
+    try:
+        if Profile.objects.filter(uuid = uid).exists():
+            if request.method == "POST":
+                pass1 = 'password1'in request.POST and request.POST['password1']
+                pass2 =  'password2'in request.POST and request.POST['password2']
+                if pass1 == pass2:
+                    p = Profile.objects.get(uuid=uid)
+                    u = p.user
+                    user = User.objects.get(username=u)
+                    user.password = make_password(pass1)
+                    user.save()
+                    messages.success(request,'Password has been reset successfully')
+                    return redirect('/login/')
+                else:
+                    return HttpResponse('Two Password did not match')
+                
+        else:
+            return HttpResponse('Wrong URL')
+    except:
+        return HttpResponse('Wrong URL')
+    return render(request,'change-password.html')
