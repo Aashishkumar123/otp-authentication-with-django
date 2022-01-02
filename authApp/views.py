@@ -54,7 +54,8 @@ def Registration(request):
 
 def otpRegistration(request):
     if request.method == "POST":
-        u_otp = request.POST['otp']
+        # u_otp = request.POST['otp']
+        u_otp = request.POST.get('otp')
         otp = request.session.get('otp')
         user = request.session['username']
         hash_pwd = make_password(request.session.get('password'))
